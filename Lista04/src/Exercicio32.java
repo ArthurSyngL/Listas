@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Exercicio32 {
     public static void main(String[] args) {
         int[] r = {1, 2, 3, 4, 5}; // Vetor r
