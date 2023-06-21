@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class Exercicio30 {
     public static void main(String[] args) {
@@ -24,10 +21,10 @@ public class Exercicio30 {
     }
 
     public static void lerVetor(int[] vetor) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         for (int i = 0; i < vetor.length; i++) {
             System.out.print("Elemento " + (i + 1) + ": ");
-            vetor[i] = scanner.nextInt();
+            vetor[i] = sc.nextInt();
         }
     }
 
