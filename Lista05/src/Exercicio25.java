@@ -1,5 +1,3 @@
-package Lista5;
-
 import java.util.Scanner;
 
 public class Exercicio25 {

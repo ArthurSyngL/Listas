@@ -33,6 +33,7 @@ public class Exercicio37 {
                 imprimirVetor(vetor);
         }
 
+        // Funcao para Imprimir o Vetor
         public static void imprimirVetor(int[] vetor) {
                 for (int i = 0; i < vetor.length; i++) {
                         System.out.print(vetor[i] + " ");
