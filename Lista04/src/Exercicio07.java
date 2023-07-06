@@ -1,8 +1,13 @@
+/*
+Aluno:Arthur Socrates Saavedra Lemos
+Turma:2° Informatica
+Maior e a posicao
+ */
 import java.util.Scanner;
-
 public class Exercicio07 {
     public static void main(String[] args) {
 
+        //DECLARAR E INICIALIZAR A VARIAVEL INPUT - Pacote SCANNER
         Scanner sc = new Scanner(System.in);
 
         //Declarando as veriaveis e os vetores

@@ -1,11 +1,18 @@
+/*
+Aluno:Arthur Socrates Saavedra Lemos
+Turma:2° Informatica
+Maior e menor dos valores lidos
+ */
 import java.util.Scanner;
-
 public class Exercicio06 {
     public static void main(String[] args) {
+
+        //DECLARAR E INICIALIZAR A VARIAVEL INPUT - Pacote SCANNER
         Scanner sc = new Scanner(System.in);
 
-        // Declarando o vetor
+        // Declarando o vetor e as variaveis
         int[] vetor = new int[10];
+        int maior, menor;
 
         // Leitura dos valores do vetor
         System.out.println("Digite os valores do vetor:");
@@ -13,9 +20,9 @@ public class Exercicio06 {
             vetor[i] = sc.nextInt();
         }
 
-        // Encontrar o maior e o menor elemento
-        int maior = vetor[0];
-        int menor = vetor[0];
+        // Encontrar o maior e o menor elementoc
+        maior = vetor[0];
+        menor = vetor[0];
 
         for (int i = 1; i < 10; i++) {
             if (vetor[i] > maior) {

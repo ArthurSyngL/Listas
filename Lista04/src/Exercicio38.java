@@ -1,11 +1,23 @@
+/*
+Aluno:Arthur Socrates Saavedra Lemos
+Turma:2° Informatica
+ler 6 numeros e exibilos
+ */
 import java.util.Scanner;
 
 public class Exercicio38 {
     public static void main(String[] args) {
-        int tamanho = 10; // Tamanho do vetor
+
+        // Declarando variaveis e vetor
+
+        int tamanho = 10;
         int[] vetor = new int[tamanho];
+
+        //DECLARAR E INICIALIZAR A VARIAVEL INPUT - Pacote SCANNER
+
         Scanner scanner = new Scanner(System.in);
 
+        // Recebendo
         System.out.println("Digite os valores:");
 
         for (int i = 0; i < tamanho; i++) {
@@ -13,6 +25,7 @@ public class Exercicio38 {
             inserirOrdenado(vetor, i, valor);
         }
 
+        // Exibindo
         System.out.println("Valores em ordem crescente:");
 
         for (int valor : vetor) {

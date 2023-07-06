@@ -1,17 +1,27 @@
+/*
+Aluno:Arthur Socrates Saavedra Lemos
+Turma:2° Informatica
+Dois numeros a e b
+ */
 import java.util.Scanner;
 
 public class Exercicio35 {
     public static void main(String[] args) {
-        // Leitura dos números a e b
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Digite o número a: ");
-        int a = sc.nextInt();
-        System.out.print("Digite o número b: ");
-        int b = sc.nextInt();
 
-        // Criação dos vetores para representar os algarismos dos números
+        // Declarando o vetor e Variaveis
+
+        int a=0,b=0;
         int[] vetorA = criarVetor(a);
         int[] vetorB = criarVetor(b);
+
+        Scanner sc = new Scanner(System.in);
+
+        // Leitura dos números a e b
+        System.out.print("Digite o número a: ");
+        a = sc.nextInt();
+        System.out.print("Digite o número b: ");
+        b = sc.nextInt();
+
 
         // Realização da soma usando apenas os vetores
         int[] resultado = somarVetores(vetorA, vetorB);

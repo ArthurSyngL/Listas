@@ -1,10 +1,23 @@
+/*
+Aluno:Arthur Socrates Saavedra Lemos
+Turma:2° Informatica
+Calcule N
+ */
 import java.util.Scanner;
 
 public class Exercicio39 {
     public static void main(String[] args) {
+
+        // Declarando variaveis e vetor
+
         int n = 0;
         int[][] triangulo = new int[n][];
+
+        //DECLARAR E INICIALIZAR A VARIAVEL INPUT - Pacote SCANNER
+
         Scanner scanner = new Scanner(System.in);
+
+        // Recebendo
         System.out.print("Digite o número de linhas do Triângulo de Pascal: ");
         n = scanner.nextInt();
 

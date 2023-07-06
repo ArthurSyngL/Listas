@@ -1,3 +1,8 @@
+/*
+Aluno:Arthur Socrates Saavedra Lemos
+Turma:2° Informatica
+Quadrado dos componentes
+ */
 import java.util.Scanner;
 
 public class Exercicio03 {

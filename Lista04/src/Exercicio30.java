@@ -1,7 +1,14 @@
+/*
+Aluno:Arthur Socrates Saavedra Lemos
+Turma:2° Informatica
+Intersecao de 2 volumes
+ */
 import java.util.*;
 
 public class Exercicio30 {
     public static void main(String[] args) {
+
+        // Declaracao de vetor
         int[] vetor1 = new int[10];
         int[] vetor2 = new int[10];
 
@@ -20,6 +27,7 @@ public class Exercicio30 {
         imprimirVetor(intersecao);
     }
 
+    // Funcao para ler o Vetor
     public static void lerVetor(int[] vetor) {
         Scanner sc = new Scanner(System.in);
         for (int i = 0; i < vetor.length; i++) {
@@ -28,6 +36,7 @@ public class Exercicio30 {
         }
     }
 
+    // Funcao para encontrar a intersecao
     public static int[] encontrarIntersecao(int[] vetor1, int[] vetor2) {
         Set<Integer> set = new HashSet<>();
         List<Integer> intersecaoList = new ArrayList<>();
@@ -51,6 +60,7 @@ public class Exercicio30 {
         return intersecao;
     }
 
+    // Funcao para Exibir o calculo final
     public static void imprimirVetor(int[] vetor) {
         for (int i = 0; i < vetor.length; i++) {
             System.out.println(vetor[i]);

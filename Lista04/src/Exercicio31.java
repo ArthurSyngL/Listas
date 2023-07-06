@@ -1,8 +1,15 @@
+/*
+Aluno:Arthur Socrates Saavedra Lemos
+Turma:2° Informatica
+Uniao de dois valores anteriores
+ */
 import java.util.Scanner;
 import java.util.Arrays;
 
 public class Exercicio31 {
     public static void main(String[] args) {
+
+        // Declaracao de Vetor
 
         int[] vetor1 = new int[10];
         int[] vetor2 = new int[10];

@@ -1,20 +1,29 @@
-package Lista4;
-
+/*
+Aluno:Arthur Socrates Saavedra Lemos
+Turma:2° Informatica
+Maior, media e menor dos valores
+ */
 import java.util.Scanner;
-
 public class Exercicio12 {
     public static void main(String[] args) {
+
+        // Declarando Variaveis e vetor
+
         double[] valores = new double[5];
+        double maior = valores[0], menor = valores[0], soma = valores[0], media;
+
+        //DECLARAR E INICIALIZAR A VARIAVEL INPUT - Pacote SCANNER
+
         Scanner scanner = new Scanner(System.in);
+
+        // Recebendo os valores
 
         System.out.println("Digite 5 valores:");
         for (int i = 0; i < 5; i++) {
             valores[i] = scanner.nextDouble();
         }
 
-        double maior = valores[0];
-        double menor = valores[0];
-        double soma = valores[0];
+        // Calculando e exibindo
 
         for (int i = 1; i < 5; i++) {
             if (valores[i] > maior) {
@@ -28,7 +37,7 @@ public class Exercicio12 {
             soma += valores[i];
         }
 
-        double media = soma / 5;
+        media = soma / 5;
 
         System.out.println("Valores lidos:");
         for (int i = 0; i < 5; i++) {

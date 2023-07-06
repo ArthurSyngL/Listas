@@ -1,22 +1,44 @@
+/*
+Aluno:Arthur Socrates Saavedra Lemos
+Turma:2° Informatica
+Posicao Impares e pares
+ */
+import java.util.Scanner;
 public class Exercicio22 {
     public static void main(String[] args) {
-        int[] vetorA = new int[10];
-        int[] vetorB = new int[10];
-        int[] vetorC = new int[10];
 
-        for (int i = 0; i < 10; i++) {
-            vetorA[i] = i + 1;
-            vetorB[i] = 10 - i;
+        // Declarando os vetor
+
+        int tamanho = 10;
+        int[] vetor1 = new int[tamanho];
+        int[] vetor2 = new int[tamanho];
+        int[] vetorResultado = new int[tamanho * 2];
+
+        //DECLARAR E INICIALIZAR A VARIAVEL INPUT - Pacote SCANNER
+
+        Scanner scanner = new Scanner(System.in);
+
+        // Recebenco os valores
+        System.out.println("Digite os elementos do primeiro vetor:");
+        for (int i = 0; i < tamanho; i++) {
+            vetor1[i] = scanner.nextInt();
         }
 
-        for (int i = 0; i < 10; i++) {
-            vetorC[2 * i] = vetorA[i];
-            vetorC[2 * i + 1] = vetorB[i];
+        System.out.println("Digite os elementos do segundo vetor:");
+        for (int i = 0; i < tamanho; i++) {
+            vetor2[i] = scanner.nextInt();
         }
 
-        System.out.println("Vetor C (pares do vetor A e ímpares do vetor B):");
-        for (int i = 0; i < 10; i++) {
-            System.out.print(vetorC[i] + " ");
+        // Calculando e Exibindos os valores
+
+        for (int i = 0; i < tamanho; i++) {
+            vetorResultado[i * 2] = vetor1[i];
+            vetorResultado[(i * 2) + 1] = vetor2[i];
+        }
+
+        System.out.println("Vetor resultado:");
+        for (int i = 0; i < vetorResultado.length; i++) {
+            System.out.print(vetorResultado[i] + " ");
         }
     }
 }

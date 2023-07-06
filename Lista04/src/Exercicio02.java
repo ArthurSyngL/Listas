@@ -4,7 +4,6 @@ Turma:2° Informatica
 ler 6 numeros e exibilos
  */
 import java.util.Scanner;
-
 public class Exercicio02 {
     public static void main(String[] args) {
 

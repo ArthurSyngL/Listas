@@ -1,10 +1,20 @@
+/*
+Aluno:Arthur Socrates Saavedra Lemos
+Turma:2° Informatica
+Compactar o vetor
+ */
 import java.util.Scanner;
 
 public class Exercicio33 {
     public static void main(String[] args) {
+
+        // Declarando Variaveis e Vetor
+
         int tamanho = 15;
         int[] vetor = new int[tamanho];
         int[] vetorCompacto;
+
+        //DECLARAR E INICIALIZAR A VARIAVEL INPUT - Pacote SCANNER
 
         Scanner sc = new Scanner(System.in);
 

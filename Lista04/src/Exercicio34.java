@@ -1,14 +1,23 @@
+/*
+Aluno:Arthur Socrates Saavedra Lemos
+Turma:2° Informatica
+Numero digitado anteriormente
+ */
 import java.util.Scanner;
 public class Exercicio34 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int[] numeros = new int[10];
-        int contador = 0;
 
+        // Declarando vetor e variaveis
+
+        int[] numeros = new int[10];
+        int contador = 0, numero;
+
+        // Recebendo os valores
         System.out.println("Digite 10 números diferentes:");
 
         while (contador < 10) {
-            int numero = sc.nextInt();
+            numero = sc.nextInt();
 
             if (numeroJaDigitado(numeros, numero)) {
                 System.out.println("Número já digitado. Digite outro número:");
@@ -18,6 +27,8 @@ public class Exercicio34 {
             }
         }
 
+        // Exibindo
+
         System.out.println("Vetor final:");
 
         for (int i = 0; i < numeros.length; i++) {
@@ -25,6 +36,7 @@ public class Exercicio34 {
         }
     }
 
+    // Funcao para saber que ja digitou o numero
     public static boolean numeroJaDigitado(int[] vetor, int numero) {
         for (int i = 0; i < vetor.length; i++) {
             if (vetor[i] == numero) {

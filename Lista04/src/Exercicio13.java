@@ -1,21 +1,30 @@
-package Lista4;
-
+/*
+Aluno:Arthur Socrates Saavedra Lemos
+Turma:2° Informatica
+Posicao do maior e menor
+ */
 import java.util.Scanner;
 
 public class Exercicio13 {
     public static void main(String[] args) {
+
+        //Declarando o vetor e variaveis
+
         double[] valores = new double[5];
+        double maior = valores[0], menor = valores[0];
+        int posicaoMaior = 0, posicaoMenor = 0;
+
+        //DECLARAR E INICIALIZAR A VARIAVEL INPUT - Pacote SCANNER
+
         Scanner scanner = new Scanner(System.in);
 
+        // Lendos os valores
         System.out.println("Digite 5 valores:");
         for (int i = 0; i < 5; i++) {
             valores[i] = scanner.nextDouble();
         }
 
-        double maior = valores[0];
-        double menor = valores[0];
-        int posicaoMaior = 0;
-        int posicaoMenor = 0;
+        // Calculando e exibindo
 
         for (int i = 1; i < 5; i++) {
             if (valores[i] > maior) {

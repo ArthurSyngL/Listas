@@ -1,5 +1,12 @@
+/*
+Aluno:Arthur Socrates Saavedra Lemos
+Turma:2° Informatica
+Ordenar os elementos
+ */
 public class Exercicio37 {
         public static void main(String[] args) {
+
+                // Declarando vetor
                 int[] vetor = {1, 2, 3, 4, 5, 6, 11, 10, 9, 8, 7};
 
                 // Imprimir vetor original
